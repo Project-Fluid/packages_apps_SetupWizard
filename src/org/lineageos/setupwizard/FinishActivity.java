@@ -46,7 +46,7 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
-import lineageos.providers.LineageSettings;
+//import lineageos.providers.LineageSettings;
 
 import static android.os.Binder.getCallingUserHandle;
 import static org.lineageos.setupwizard.Manifest.permission.FINISH_SETUP;
@@ -188,20 +188,20 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private static void handleEnableMetrics(SetupWizardApp setupWizardApp) {
-        Bundle privacyData = setupWizardApp.getSettingsBundle();
+  /*      Bundle privacyData = setupWizardApp.getSettingsBundle();
         if (privacyData != null
                 && privacyData.containsKey(KEY_SEND_METRICS)) {
             LineageSettings.Secure.putInt(setupWizardApp.getContentResolver(),
                     LineageSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
                             ? 1 : 0);
-        }
+        }*/
     }
 
     private static void handleNavKeys(SetupWizardApp setupWizardApp) {
-        if (setupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
+        /*if (setupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
             writeDisableNavkeysOption(setupWizardApp,
                     setupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS));
-        }
+        }*/
     }
 
     private static void handleRecoveryUpdate(SetupWizardApp setupWizardApp) {
@@ -214,7 +214,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        /*final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         final boolean virtualKeysEnabled = LineageSettings.System.getIntForUser(
                     context.getContentResolver(), LineageSettings.System.FORCE_SHOW_NAVBAR, 0,
@@ -223,6 +223,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
             LineageSettings.System.putIntForUser(context.getContentResolver(),
                     LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0,
                     UserHandle.USER_CURRENT);
-        }
+        }*/
     }
 }

@@ -65,7 +65,7 @@ import org.lineageos.setupwizard.UpdateRecoveryActivity;
 import org.lineageos.setupwizard.WifiSetupActivity;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
-import org.lineageos.internal.util.PackageManagerUtils;
+import org.lineageos.setupwizard.util.PackageManagerUtils;
 
 import java.io.File;
 import java.util.ArrayList;

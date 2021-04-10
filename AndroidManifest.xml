@@ -39,12 +39,9 @@
     <uses-permission android:name="android.permission.MANAGE_USERS" />
     <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="android.permission.BACKUP" />
     <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
     <uses-permission android:name="lineageos.permission.FINISH_SETUP" />
-    <uses-permission android:name="lineageos.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="lineageos.permission.WRITE_SECURE_SETTINGS" />
 
     <permission
         android:name="lineageos.permission.FINISH_SETUP"
@@ -246,7 +243,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LineageSettingsActivity"
+        <!--<activity android:name=".LineageSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -256,7 +253,7 @@
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
+        </activity>-->
 
         <activity android:name=".BiometricActivity"
                   android:label="@string/activity_label_empty"
